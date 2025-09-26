@@ -7,7 +7,7 @@ const product = useState();
 </script>
 
 <template>
-  <p style="height: 60px;">
+  <p class="h-[75px]">
     {{ product.title }}
   </p>
 </template>

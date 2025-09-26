@@ -7,10 +7,11 @@
 :::column
 ::::product-card-name
 ::::
+:::
+::
 
-    ::::product-card-price
-    ::::
-
+::row{class="justify-center w-full"}
+:::product-card-price
 :::
 ::
 

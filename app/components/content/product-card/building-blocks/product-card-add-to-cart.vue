@@ -8,7 +8,7 @@ defineProps({
 </script>
 
 <template>
-  <button>
+  <button class="border border-gray-300 rounded-md px-4 py-4 cursor-pointer w-full">
     <slot name="default">
       {{ text }}
     </slot>

@@ -1,4 +1,4 @@
 # Category
 
-::product-card
+::product-list
 ::

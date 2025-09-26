@@ -8,11 +8,13 @@ export default defineNuxtPlugin({
       theme: string;
       css?: string;
       lang?: "en" | "fr";
+      backendProvider: string;
     };
 
     const { data: tenantConfig } = await useApi<TenantConfig>("/api/config");
 
     if (i18n) {
+      // TODO: identify user's preferred language from browser settings
       i18n.setLocale(tenantConfig.value?.lang || "en");
     }
 

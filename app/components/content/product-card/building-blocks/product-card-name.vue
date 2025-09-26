@@ -8,6 +8,6 @@ const product = useState();
 
 <template>
   <p class="h-[75px]">
-    {{ product.title }}
+    {{ product.name }}
   </p>
 </template>

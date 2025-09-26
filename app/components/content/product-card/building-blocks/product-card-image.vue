@@ -10,7 +10,7 @@ const product = useState();
   <div class="product-image">
     <img
       src="https://placehold.co/600x400"
-      :alt="product.title"
+      :alt="product.name"
       width="150"
       height="100"
     >

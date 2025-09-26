@@ -6,6 +6,7 @@ export default defineCachedEventHandler(async (event) => {
   const config = {
     name: "Default Tenant",
     theme: "default-tenant-theme",
+    lang: "en",
   };
 
   if (!config) {

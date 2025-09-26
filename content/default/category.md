@@ -2,7 +2,8 @@
 description: My Page Description
 ---
 
-# Category
+::translate{value="category"}
+::
 
 ::product-list
 ::

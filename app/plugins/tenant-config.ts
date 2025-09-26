@@ -1,14 +1,20 @@
 export default defineNuxtPlugin({
   name: "tenant-config",
   async setup() {
+    const i18n = useNuxtApp().$i18n;
+
     type TenantConfig = {
       name: string;
       theme: string;
       css?: string;
-      lang?: string;
+      lang?: "en" | "fr";
     };
 
     const { data: tenantConfig } = await useApi<TenantConfig>("/api/config");
+
+    if (i18n) {
+      i18n.setLocale(tenantConfig.value?.lang || "en");
+    }
 
     useHeadSafe({
       // Add a 'data-theme' attribute to the root <html> element

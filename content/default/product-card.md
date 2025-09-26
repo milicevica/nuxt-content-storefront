@@ -1,9 +1,13 @@
-# Product Card
+::row
+    ::column
+        ::product-card-image
+        ::
+    ::
 
-::product-card-name
-::
-
-::product-card-image
+    ::column
+        ::product-card-name
+        ::
+    ::
 ::
 
 ::product-card-price

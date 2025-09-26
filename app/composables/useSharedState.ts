@@ -10,9 +10,11 @@ export function createSharedState<T extends object>() {
   };
 
   const useState = (): T => {
-    if (!key) throw new Error("State not provided yet!");
+    if (!key)
+      throw new Error("State not provided yet!");
     const state = inject<T>(key);
-    if (!state) throw new Error("Shared state not provided in parent!");
+    if (!state)
+      throw new Error("Shared state not provided in parent!");
     return state;
   };
 

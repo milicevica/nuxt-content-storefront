@@ -1,3 +1,3 @@
 <template>
-    <p>$10.00</p>
+  <p>$10.00</p>
 </template>

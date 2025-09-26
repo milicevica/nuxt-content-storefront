@@ -1,5 +1,5 @@
-export interface Product {
-    id: number;
-    title: string;
-    thumbnailUrl: string;
-}
+export type Product = {
+  id: number;
+  title: string;
+  thumbnailUrl: string;
+};

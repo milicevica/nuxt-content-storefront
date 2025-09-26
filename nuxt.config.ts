@@ -2,32 +2,32 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: '2025-07-15',
+  compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
-  modules: ['@nuxt/content', '@nuxt/eslint', '@nuxt/icon', '@nuxtjs/color-mode'],
+  modules: ["@nuxt/content", "@nuxt/eslint", "@nuxt/icon", "@nuxtjs/color-mode"],
   css: ["~/assets/css/main.css"],
   eslint: {
     config: {
-      standalone: false
-    }
+      standalone: false,
+    },
   },
   vite: {
-    plugins: [tailwindcss()]
+    plugins: [tailwindcss()],
   },
   content: {
     preview: {
-      api: 'https://api.nuxt.studio'
+      api: "https://api.nuxt.studio",
     },
     renderer: {
-      anchorLinks: false
-    }
+      anchorLinks: false,
+    },
   },
   mdc: {
     components: {
-      prose: false
-    }
+      prose: false,
+    },
   },
   colorMode: {
-    dataValue: "theme"
-  }
-})
+    dataValue: "theme",
+  },
+});

@@ -1,21 +1,20 @@
 <script lang="ts" setup>
-import type { Product } from '~/types';
+import type { Product } from "~/types";
 
 const props = defineProps<{
   product: Product;
 }>();
 
 const { provideState } = createSharedState();
-const { data: page } = await useAsyncData(() => queryCollection("content").path("/default/product-card").first())
+const { data: page } = await useAsyncData(() => queryCollection("content").path("/default/product-card").first());
 
 provideState(props.product);
 </script>
 
-
 <template>
-    <div class="product-card">
-        <ContentRenderer v-if="page" :value="page" />
-    </div>
+  <div class="product-card">
+    <ContentRenderer v-if="page" :value="page" />
+  </div>
 </template>
 
 <style scoped>
@@ -33,7 +32,6 @@ provideState(props.product);
 .product-card div {
   display: flex;
   flex-direction: column;
-  gap: 16px;;
+  gap: 16px;
 }
 </style>
-

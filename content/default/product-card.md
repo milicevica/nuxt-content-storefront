@@ -13,5 +13,7 @@
   :::
 ::
 
-::product-card-add-to-cart
+::row
+    :::product-card-add-to-cart
+    :::
 ::

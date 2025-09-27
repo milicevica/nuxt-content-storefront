@@ -8,7 +8,7 @@ export default defineCachedEventHandler(async (event) => {
     theme: "default-tenant-theme",
     lang: "en",
     backendProvider: "dbc",
-    tenant: "default",
+    tenant: "demo",
   };
 
   if (!config) {

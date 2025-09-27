@@ -3,7 +3,7 @@ const route = useRoute();
 const slug = route.params.slug || [];
 
 const { data: page } = await useAsyncData(() =>
-  queryCollection("content").path(`/default/${slug}`).first(),
+  queryCollection("content").path(`/default/pages/${slug}`).first(),
 );
 
 if (!page.value) {

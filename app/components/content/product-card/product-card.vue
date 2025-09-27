@@ -6,7 +6,7 @@ const props = defineProps<{
 }>();
 
 const { provideState } = createSharedState();
-const { data: page } = await useAsyncData(() => queryCollection("content").path("/default/product-card").first());
+const { data: page } = await useAsyncData(() => queryCollection("content").path("/default/components/product-card").first());
 
 provideState(props.product);
 </script>

@@ -10,6 +10,8 @@ export default defineNuxtConfig({
     "@nuxt/icon",
     "@nuxtjs/color-mode",
     "@nuxtjs/i18n",
+    "@nuxt/image",
+    "@nuxt/fonts",
   ],
   i18n: {
     locales: [

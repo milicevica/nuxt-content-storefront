@@ -5,8 +5,9 @@ const props = defineProps<{
   product: Product;
 }>();
 
+const tenant = useTenant();
 const { provideState } = createSharedState();
-const { data: page } = await useAsyncData(() => queryCollection("content").path("/default/components/product-card").first());
+const { data: page } = await useAsyncData(() => queryCollection("content").path(`/${tenant.value.tenant}/components/product-card`).first());
 
 provideState(props.product);
 </script>

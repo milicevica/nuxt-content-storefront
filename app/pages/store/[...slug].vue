@@ -1,9 +1,10 @@
 <script lang="ts" setup>
 const route = useRoute();
 const slug = route.params.slug || [];
+const tenant = useTenant();
 
 const { data: page } = await useAsyncData(() =>
-  queryCollection("content").path(`/default/pages/${slug}`).first(),
+  queryCollection("content").path(`/${tenant.value.tenant}/pages/${slug}`).first(),
 );
 
 if (!page.value) {

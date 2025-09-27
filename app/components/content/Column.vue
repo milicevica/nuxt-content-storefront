@@ -1,14 +1,5 @@
 <template>
-  <div class="column">
+  <div class="flex flex-col gap-4 flex-1">
     <slot />
   </div>
 </template>
-
-<style scoped>
-.column {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  flex: 1;
-}
-</style>

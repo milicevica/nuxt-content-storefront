@@ -1,13 +1,5 @@
 <template>
-  <div class="row">
+  <div class="flex flex-row gap-[16px]">
     <slot />
   </div>
 </template>
-
-<style scoped>
-.row {
-  display: flex;
-  flex-direction: row;
-  gap: 16px;
-}
-</style>

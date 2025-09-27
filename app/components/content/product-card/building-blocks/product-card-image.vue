@@ -7,7 +7,7 @@ const product = useState();
 </script>
 
 <template>
-  <div class="product-image">
+  <div class="flex items-center justify-center mx-auto h-[100px] w-[150px]">
     <img
       src="https://placehold.co/600x400"
       :alt="product.name"
@@ -16,15 +16,3 @@ const product = useState();
     >
   </div>
 </template>
-
-<style scoped>
-.product-image {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-
-  height: 100px;
-  width: 150px;
-}
-</style>

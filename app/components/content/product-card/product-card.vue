@@ -12,26 +12,11 @@ provideState(props.product);
 </script>
 
 <template>
-  <div class="product-card">
-    <ContentRenderer v-if="page" :value="page" />
+  <div class="flex flex-col border border-[#eaeaea] rounded-lg p-6 text-center min-h-[200px]">
+    <ContentRenderer
+      v-if="page"
+      :value="page"
+      class="flex flex-col gap-[16px]"
+    />
   </div>
 </template>
-
-<style scoped>
-.product-card {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid #eaeaea;
-  border-radius: 8px;
-  padding: 1.6rem;
-  text-align: center;
-
-  min-height: 200px;
-}
-
-.product-card div {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-</style>

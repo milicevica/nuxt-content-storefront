@@ -5,7 +5,7 @@ const { data: products } = await useApi<Product[]>("/api/ecommerce/photos?_limit
 </script>
 
 <template>
-  <div class="product-container">
+  <div class="grid gap-6 grid-cols-[repeat(auto-fill,minmax(20rem,1fr))]">
     <ProductCard
       v-for="product in products"
       :key="product.id"
@@ -13,11 +13,3 @@ const { data: products } = await useApi<Product[]>("/api/ecommerce/photos?_limit
     />
   </div>
 </template>
-
-<style scoped>
-.product-container {
-  display: grid;
-  grid-gap: 1.6rem;
-  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
-}
-</style>

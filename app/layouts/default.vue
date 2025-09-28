@@ -1,8 +1,8 @@
 <template>
-  <div id="nuxt-content-storefront" class="h-screen w-screen">
+  <div id="nuxt-content-storefront" class="flex flex-col min-h-screen gap-6">
     <AppHeader />
 
-    <main>
+    <main class="flex-1 pt-16 pb-16">
       <slot />
     </main>
 

@@ -1,7 +1,12 @@
 ::container
 :::header-top
-::::header-logo
+
+<div class="h-8 w-32">
+
+::::header-logo{image="/logo.png"}
 ::::
+
+</div>
 
 ::::header-search
 ::::

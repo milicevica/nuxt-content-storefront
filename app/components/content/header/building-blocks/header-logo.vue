@@ -1,6 +1,12 @@
+<script lang="ts" setup>
+defineProps<{
+  image: string;
+}>();
+</script>
+
 <template>
   <img
-    src="/logo.png"
+    :src="image"
     alt="Storefront Logo"
     class="h-8 w-32"
   >

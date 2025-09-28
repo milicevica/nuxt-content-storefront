@@ -7,7 +7,7 @@ import Header from "~/components/content/header/header.vue";
   <div id="nuxt-content-storefront" class="flex flex-col min-h-screen gap-6">
     <Header />
 
-    <main class="flex-1 pt-32 pb-16">
+    <main class="flex-1 pt-42 pb-16">
       <div class="w-4/5 mx-auto p-4">
         <slot />
       </div>

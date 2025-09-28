@@ -1,9 +1,7 @@
 <template>
   <div>
-    <h1>Nuxt Content Storefront</h1>
-
     <NuxtLink to="/store/category">
-      Categories
+      {{ $t("category") }}
     </NuxtLink>
   </div>
 </template>

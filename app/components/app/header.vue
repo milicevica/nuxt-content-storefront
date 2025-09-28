@@ -1,7 +1,10 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import Header from "../content/header/header.vue";
+</script>
 
 <template>
-  <header class="fixed top-0 left-0 w-full z-50 shadow-md bg-white">
+  <Header />
+  <!-- <header class="fixed top-0 left-0 w-full z-50 shadow-md bg-white">
     <div class="flex items-center justify-between px-6 py-3">
       <div class="flex items-center justify-center space-x-2">
         <img
@@ -32,42 +35,40 @@
 
     <div class="flex items-center justify-between px-6 py-2 bg-gray-50">
       <div class="relative inline-block group">
-        <!-- Trigger -->
-        <button
-          class="flex items-center space-x-1 px-3 py-2 border rounded-md text-sm font-medium text-gray-700 hover:bg-gray-100"
-        >
-          <span>Categories</span>
-          <svg
-            class="w-4 h-4"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M19 9l-7 7-7-7"
-            />
-          </svg>
-        </button>
+  <button
+    class="flex items-center space-x-1 px-3 py-2 border rounded-md text-sm font-medium text-gray-700 hover:bg-gray-100"
+  >
+    <span>Categories</span>
+    <svg
+      class="w-4 h-4"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      viewBox="0 0 24 24"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M19 9l-7 7-7-7"
+      />
+    </svg>
+  </button>
 
-        <!-- Dropdown menu (attached to same group wrapper) -->
-        <div
-          class="absolute left-0 mt-1 w-48 bg-white border rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-200"
-        >
-          <a href="/category/1" class="block px-4 py-2 text-sm hover:bg-gray-100">Electronics</a>
-          <a href="/category/2" class="block px-4 py-2 text-sm hover:bg-gray-100">Clothing</a>
-          <a href="/category/3" class="block px-4 py-2 text-sm hover:bg-gray-100">Home</a>
-        </div>
-      </div>
+  <div
+    class="absolute left-0 mt-1 w-48 bg-white border rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-200"
+  >
+    <a href="/category/1" class="block px-4 py-2 text-sm hover:bg-gray-100">Electronics</a>
+    <a href="/category/2" class="block px-4 py-2 text-sm hover:bg-gray-100">Clothing</a>
+    <a href="/category/3" class="block px-4 py-2 text-sm hover:bg-gray-100">Home</a>
+  </div>
+  </div>
 
-      <div />
+  <div />
 
-      <div class="flex items-center space-x-6 text-sm font-medium">
-        <a href="/account" class="text-gray-600 hover:text-blue-600">Account</a>
-        <a href="/cart" class="text-gray-600 hover:text-blue-600">Cart (0)</a>
-      </div>
-    </div>
-  </header>
+  <div class="flex items-center space-x-6 text-sm font-medium">
+    <a href="/account" class="text-gray-600 hover:text-blue-600">Account</a>
+    <a href="/cart" class="text-gray-600 hover:text-blue-600">Cart (0)</a>
+  </div>
+  </div>
+  </header> -->
 </template>

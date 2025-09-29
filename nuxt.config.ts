@@ -12,6 +12,7 @@ export default defineNuxtConfig({
     "@nuxtjs/i18n",
     "@nuxt/image",
     "@nuxt/fonts",
+    "@pinia/nuxt",
   ],
   i18n: {
     locales: [

@@ -1,10 +1,10 @@
-type Transformer = (raw: any) => any;
+type Transformer<T> = (raw: any) => T;
 
-type Endpoint = {
+type Endpoint<T = any> = {
   method: "GET" | "POST" | "PUT" | "DELETE";
   path: string;
-  responseTransformer?: Transformer;
-  requestTransformer?: Transformer;
+  responseTransformer?: Transformer<T>;
+  requestTransformer?: Transformer<T>;
 };
 
 export const providers: Record<string, { baseUrl: string; requests: Record<"categories" | "products", Endpoint> }> = {
@@ -14,7 +14,7 @@ export const providers: Record<string, { baseUrl: string; requests: Record<"cate
       categories: {
         method: "GET",
         path: "/photos",
-        responseTransformer: raw => ({
+        responseTransformer: (raw: any): Product => ({
           id: raw.id,
           name: raw.title,
           image: raw.thumbnailUrl,
@@ -23,7 +23,7 @@ export const providers: Record<string, { baseUrl: string; requests: Record<"cate
       products: {
         method: "GET",
         path: "/products",
-        responseTransformer: raw => raw,
+        responseTransformer: (raw: any) => raw,
       },
     },
   },

@@ -1,6 +1,4 @@
 <script lang="ts" setup>
-import type { Product } from "~/types";
-
 const { useState } = createSharedState<Product>();
 
 const product = useState();

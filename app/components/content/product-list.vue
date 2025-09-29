@@ -1,6 +1,4 @@
 <script lang="ts" setup>
-import type { Product } from "~/types";
-
 const { data: products } = await useApi<Product[]>(`${useEndpoints().getCategories}?_limit=10`);
 </script>
 

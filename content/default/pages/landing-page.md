@@ -1,2 +1,5 @@
+::breadcrumbs
+::
+
 ::category-list
 ::

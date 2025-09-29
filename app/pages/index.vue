@@ -1,7 +1,3 @@
 <template>
-  <div>
-    <NuxtLink to="/store/category">
-      {{ $t("category") }}
-    </NuxtLink>
-  </div>
+  <AppComponentLoader path-to-load="/pages/landing-page" />
 </template>

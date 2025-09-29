@@ -7,8 +7,16 @@ description: Demo Client Category Page Description
 ::breadcrumbs{:breadcrumbs='["Demo Category"]'}
 ::
 
-::active-category-name
-::
+<Row>
+<Column>
+
+    ::active-category-name
+    ::
+
+</Column>
+<Column>
+</Column>
+</Row>
 
 ::row
 

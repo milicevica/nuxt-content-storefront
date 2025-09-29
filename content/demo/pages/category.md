@@ -7,5 +7,8 @@ description: Demo Client Category Page Description
 ::breadcrumbs{:breadcrumbs='["Demo Category"]'}
 ::
 
-:::product-list
-:::
+::category-header
+::
+
+::product-list
+::

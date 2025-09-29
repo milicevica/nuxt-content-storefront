@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-const { data: products } = await useApi<Product[]>(`${useEndpoints().getCategories}?_limit=10`);
+const { data: products } = await useApi<Product[]>(`${Endpoints.Categories}?_limit=10`);
 </script>
 
 <template>

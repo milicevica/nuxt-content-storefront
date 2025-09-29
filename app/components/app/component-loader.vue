@@ -14,8 +14,5 @@ if (component.value?.meta && component.value.meta.isPage) {
 </script>
 
 <template>
-  <ContentRenderer
-    v-if="component"
-    :value="component"
-  />
+  <ContentRenderer v-if="component" :value="component" />
 </template>

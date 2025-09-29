@@ -1,4 +1,6 @@
 ---
+isPage: true
+title: Category Page
 description: My Page Description
 ---
 

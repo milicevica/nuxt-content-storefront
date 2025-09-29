@@ -4,6 +4,13 @@ const props = defineProps<{
 }>();
 
 const { data: component } = await useTenantComponentLoader(props.pathToLoad);
+
+if (component.value?.meta && component.value.meta.isPage) {
+  useHead({
+    title: component.value?.seo.title,
+    meta: [{ name: "description", content: component.value?.seo.description }],
+  });
+}
 </script>
 
 <template>

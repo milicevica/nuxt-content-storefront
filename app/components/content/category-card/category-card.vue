@@ -9,7 +9,7 @@ provideState(props.category);
 </script>
 
 <template>
-  <NuxtLink :to="`/store/category/${category.id}`" class="min-h-[200px]">
+  <NuxtLink :to="`/category/${category.id}`" class="min-h-[200px]">
     <AppComponentLoader
       path-to-load="/components/category-card"
       class="flex flex-col gap-[16px] items-center justify-center shadow-md p-4"

@@ -14,7 +14,7 @@ export const providers: Record<string, { baseUrl: string; requests: Record<"cate
       categories: {
         method: "GET",
         path: "/photos",
-        responseTransformer: (raw: any): Product => ({
+        responseTransformer: (raw: any): Category => ({
           id: raw.id,
           name: raw.title,
           image: raw.thumbnailUrl,
@@ -22,8 +22,12 @@ export const providers: Record<string, { baseUrl: string; requests: Record<"cate
       },
       products: {
         method: "GET",
-        path: "/products",
-        responseTransformer: (raw: any) => raw,
+        path: "/photos",
+        responseTransformer: (raw: any): Product => ({
+          id: raw.id,
+          name: raw.title,
+          image: raw.thumbnailUrl,
+        }),
       },
     },
   },

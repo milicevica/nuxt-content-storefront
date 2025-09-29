@@ -4,5 +4,5 @@ const slug = route.params.slug || [];
 </script>
 
 <template>
-  <AppComponentLoader :path-to-load="`/pages/${slug}`" />
+  <AppComponentLoader :path-to-load="`/pages/${slug[0]}`" />
 </template>

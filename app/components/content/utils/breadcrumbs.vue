@@ -5,7 +5,7 @@ defineProps<{
 </script>
 
 <template>
-  <div class="flex flex-row gap-2">
+  <div class="flex flex-row gap-2 pb-2">
     <span>Home</span>
     <span v-if="breadcrumbs?.length">></span>
     <template v-for="(breadcrumb, index) in breadcrumbs" :key="breadcrumb.text">

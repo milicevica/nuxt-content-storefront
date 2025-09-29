@@ -5,9 +5,11 @@ defineProps<{
 </script>
 
 <template>
-  <img
-    :src="image"
-    alt="Storefront Logo"
-    class="h-8 w-32"
-  >
+  <NuxtLink to="/">
+    <img
+      :src="image"
+      alt="Storefront Logo"
+      class="h-8 w-32"
+    >
+  </NuxtLink>
 </template>

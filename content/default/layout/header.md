@@ -1,3 +1,5 @@
+<header class="fixed top-0 left-0 w-full z-50 shadow-md bg-white">
+
 ::container
 :::header-top
 
@@ -23,3 +25,5 @@
 ::::
 :::
 ::
+
+</header>

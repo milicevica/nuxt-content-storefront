@@ -1,5 +1,7 @@
 <script lang="ts" setup>
-const { data: products } = await useApi<Product[]>(`${Endpoints.Categories}?_limit=10`);
+const route = useRoute();
+const categoryId = route.params.id;
+const { data: products } = await useApi<Product[]>(`${Endpoints.Products}?categoryId=${categoryId}&_limit=10`);
 </script>
 
 <template>

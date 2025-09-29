@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 defineProps<{
-  breadcrumbs: Array<{ text: string; href?: string }>;
+  breadcrumbs?: Array<{ text: string; href?: string }>;
 }>();
 </script>
 

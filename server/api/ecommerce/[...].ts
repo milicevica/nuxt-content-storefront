@@ -2,7 +2,7 @@ import { joinURL } from "ufo";
 
 import { providers } from "../../utils/backend-providers";
 
-export default defineEventHandler(async (event) => {
+export default defineCachedEventHandler(async (event) => {
   // Remove the `/ecommerce/api` prefix from the path
   const targetPath = event.path.replace(/^\/api\/ecommerce\//, "");
   const targetPathWithoutQueryParams = targetPath.split("?")[0];
@@ -51,4 +51,8 @@ export default defineEventHandler(async (event) => {
   }
 
   return requestToExecute.responseTransformer(response);
+}, {
+  getKey: event => `tenant-config:${event.context.tenant.hostname}-${event.path}}`,
+  swr: true,
+  maxAge: 60 * 5,
 });

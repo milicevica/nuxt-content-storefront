@@ -4,7 +4,7 @@ title: Demo Client Category Page Title
 description: Demo Client Category Page Description
 ---
 
-::breadcrumbs{:breadcrumbs='["Forms & Stationary"]'}
+::breadcrumbs{:breadcrumbs='["Demo Category"]'}
 ::
 
 :::product-list
